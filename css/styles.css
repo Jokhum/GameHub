@@ -1,8 +1,24 @@
+body {
+  background-color: #c5d1d9;
+  font-family: "Obvia";
+  font-size: 16px;
+}
+
 h1 {
   font-size: 24px;
   color: #1b203d;
 }
 
-body {
-  background-color: #c5d1d9;
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
