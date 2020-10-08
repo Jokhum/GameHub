@@ -1,6 +1,8 @@
 body {
   background-color: #c5d1d9;
-  font-family: "Obvia";
+  font-family: obvia, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 16px;
 }
 
