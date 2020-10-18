@@ -1,7 +1,9 @@
+/*Body*/
+
 body {
   background-color: #c5d1d9;
   font-family: obvia, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-size: 16px;
 }
@@ -11,16 +13,57 @@ h1 {
   color: #1b203d;
 }
 
+/*Header*/
+
+header {
+  background-image: url("../images/WebsiteHeader1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 299px;
+  text-align: center;
+}
+
+.logo {
+  height: 288px;
+  border-radius: 20px 20px 20px 20px;
+  float: left;
+  margin-left: 10px;
+  border-style: solid;
+  border-color: #f25f20;
+  border-width: 1px;
+}
+
+ul {
+  padding: 0px;
+}
+
 nav li {
   display: inline-block;
+  border-style: solid;
+  border-radius: 20px 20px 20px 20px;
+  border-width: 1px;
+  border-color: #f25f20;
+  background-color: #1b203d;
+  height: 35px;
+}
+
+li {
+  display: inline;
 }
 
 nav a {
-  color: #000;
+  color: #f2f2f2;
   text-decoration: none;
-  padding: 10px;
+  padding: 70px;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+#navheader {
+  align-content: center;
+  padding-top: 250px;
 }
