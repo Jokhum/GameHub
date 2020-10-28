@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="home">
+  <body>
     <header>
       <div>
         <a href="index.html"> <img src="images/GameHub_Logo.jpg" alt="Logo of Gamehub" class="logo"/>
@@ -41,13 +41,51 @@
       </nav>
     </header>
     <main>
-      <h1>Favourites</h1>
+      <div id="signup">
+          <div id="formbackground">
+      <form>
+            <h4>Register</h4>
+          <label for="firstname">First Name</label>
+          <input type="text" name="name" id="firstname" class="form">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="name" id="lasttname" class="form">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" class="form">
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" class="form">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="form">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" class="form">
+          <input type="submit" value="Send Registration"> 
+        </div>
+    </div>
+           
+        <div id="signin">
+            <form>
+                <h4>Allready a member?</h4>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form2">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form2">
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </main>
     <ul>
       <div class="footermenu">
         <p>Shortcuts</p>
         <p>News</p>
         <p>Support</p>
+        <div class="socialmedia">
+            <a href="www.facebook.com"> <img src="images/facebook.png" class="mediaicons" alt="Facebook">
+            </a>
+            <a href="www.instagram.com"> <img src="images/instagram.png" class="mediaicons" alt="Instagram">
+            </a>
+            <a href="www.twitch.com"> <img src="images/twitch.png" class="mediaicons" alt="Twitch">
+            </a>
+            <a href="www.twitter.com"> <img src="images/twitter.png" class="mediaicons" alt="Twitter">
+            </a>
       </div>
     </ul>
   </body>
