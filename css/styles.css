@@ -181,7 +181,7 @@ nav a:hover {
 }
 
 .navheader {
-  width: 100%;
+  width: 100vw;
   float: none;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -199,6 +199,113 @@ nav a:hover {
   background-color: #1b203d;
   padding: 5px 30px 5px 30px;
   margin-left: 20px;
+}
+
+/*ShoppingCart*/
+
+.shopping-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.shoppingcarttext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.shoppingcarttext h1 {
+  color: #1b203d;
+}
+
+.purchasedgames {
+  display: flex;
+  margin-top: 10px;
+  border: 1px #f25f20 solid;
+  background-color: #1b203d;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+}
+
+.purchasedgames p {
+  color: #c5d1d9;
+}
+
+#pricetag {
+  position: absolute;
+  margin-left: 56%;
+}
+
+#gamesinbasket {
+  position: absolute;
+  margin-left: 25%;
+}
+
+#quantity {
+  position: absolute;
+  margin-left: 40%;
+}
+#buy-game-one {
+  display: flex;
+  margin-left: 10%;
+  border: 1px #f25f20 solid;
+} 
+
+.gametext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+
+
+#keep-shopping {
+  text-decoration: none;
+  color: #FFF;
+  border: 1px #f25f20 solid;
+  border-radius: 20px 20px 20px 20px;
+  background-color:#1b203d;
+  padding: 10px 35px 10px 25px;
+  width: 120px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#purchase {
+  text-decoration: none;
+  color: #FFF;
+  border: 1px #f25f20 solid;
+  border-radius: 20px 20px 20px 20px;
+  background-color:#1b203d;
+  padding: 10px 35px 10px 25px;
+  width: 120px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+/*Checkout*/
+
+.checkouttext {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.checkouttext h1 {
+  color: #1b203d;
 }
 
 /*Images*/
@@ -339,8 +446,3 @@ nav a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 600px){
-  .logo {
-    display: none;
-  }
-}
