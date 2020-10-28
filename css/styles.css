@@ -145,15 +145,6 @@ header {
   height: 25px;
 }
 
-.mediaicons {
-  max-width: 30px;
-  margin-left: 10px;
-}
-
-.socialmedia {
-  position: absolute;
-  bottom: 0;
-}
 /*Navigation*/
 
 
@@ -381,7 +372,7 @@ nav a:hover {
   transform: translateX(-50%);
   height: 246px;
   border-style: solid;
-  width: 40%;
+  width: 40vw;
 }
 
 .welcomebox h2 {
@@ -437,12 +428,21 @@ nav a:hover {
   border-width: 100%;
   border-width: 2px;
   width: 100%;
-  height: 100px;
+  height: 6em;
+  position: fixed;
   background-color: #c5d1d9;
-  position: absolute;
   bottom: 0;
   left: 0;
   color: #1b203d;
   text-decoration: underline;
 }
 
+.mediaicons {
+  max-width: 30px;
+  margin-left: 10px;
+}
+
+.socialmedia {
+  position: absolute;
+  bottom: 0;
+}
