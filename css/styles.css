@@ -125,25 +125,26 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 299px;
+  max-height: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px #f25f20 solid;
 }
 
 .logo {
-  height: 288px;
+  max-width: 250px;
   border-radius: 20px 20px 20px 20px;
-  float: left;
   margin-top: 3px;
-  margin-left: 3px;
+  margin-left: 15px;
 }
 
 .menuicons {
-  display: block;
   color: #f2f2f2;
   float: right;
-  margin-right: 30px;
-  margin-top: 255px;
-  position: relative;
+  bottom: 0;
+  margin-top: 120px;
   z-index: inherit;
 }
 
@@ -165,8 +166,6 @@ header {
 
 nav li {
   display: inline-block;
-  text-align: center;
-  margin-top: 2px;
   color: #f2f2f2;
 }
 
@@ -180,11 +179,9 @@ nav a:hover {
 }
 
 .navheader {
-  width: 100vw;
-  float: none;
   left: 50%;
+  justify-content: center;
   transform: translate(-50%, -50%);
-  display: inline-block;
   position: absolute;
   bottom: 0;
 }
@@ -465,4 +462,21 @@ nav a:hover {
 .socialmedia {
   position: absolute;
   bottom: 0;
+}
+
+#hamburger-m-m:checked ~ nav {
+  display: block;
+}
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+  #hamburger-m-m:checked ~ nav {
+    display: block;
+  }
 }
