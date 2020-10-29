@@ -1,4 +1,8 @@
 /*Body*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -17,6 +21,7 @@ body {
 .home {
   background-image: url(../images/websitebackgroundmain.png);
 }
+
 
 h1 {
   text-align: center;
@@ -39,6 +44,7 @@ h3 {
 }
 
 h4 {
+  padding-top: 5px;
   text-align: center;
   font-size: 26px;
   color: #1b203d;
@@ -49,71 +55,6 @@ h5 {
   font-size: 18px;
   color: #1b203d;
 }
-
-#signup {
-  display: block;
-  text-align: center;
-}
-
-#signin {
-  display: block;
-  text-align: center;
-}
-
-.form {
-  display: block;
-  margin-left: 45%;
-  margin-right: 45%;
-  width: 10%;
-}
-
-.form2 {
-    display: block;
-    margin-left: 45%;
-    margin-right: 45%;
-    width: 10%;
-}
-
-.phone {
-  text-align: center;
-}
-
-.phone h1 {
-  font-size: 18px;
-}
-
-.mail {
-  text-align: center;
-}
-
-.mail h1 {
-  font-size: 18px;
-}
-
-
-
-
-/*Contact*/
-
-
-.pressbox {
-  border-color: #f25f20;
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px 10px 10px 10px;
-  background-color: #1b203d;
-  width: 110px;
-  height: 90px;
-}
-
-
-
-.flexboxcontainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
 
 
 
@@ -155,7 +96,6 @@ header {
 }
 
 /*Navigation*/
-
 
 
 .search {
@@ -299,83 +239,7 @@ nav a:hover {
   border: 1px #1b203d solid;
 }
 
-
-/*Checkout*/
-
-.checkouttext {
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 1px solid black;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.checkouttext h1 {
-  color: #1b203d;
-}
-
-/*Images*/
-
-.mainimages {
-  display: block;
-  float: left;
-}
-
-.mainimages2 {
-  float: right;
-  display: block;
-}
-
-.mainimages img {
-  margin-top: 150px;
-  margin-left: 40px;
-  height: 246px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
-}
-
-.mainimages2 img {
-  margin-top: 150px;
-  margin-right: 40px;
-  height: 246px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
-}
-
-.gamecolumn {
-  background-color: #1b203d;
-  margin-left: 25%;
-  margin-right: 25%;
-  display: flex;
-  justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
-  border-radius: 20px 20px 20px 20px;
-  height: 300px;
-}
-
-
-.gamecovers {
-  margin: 25px;
-  height: 113px;
-  width: 81px;
-}
-
-.gamecovers img {
-  flex-direction: row;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
-  align-items: center;
-  width: 80px;
-  height: 113px;
-}
-
+/*Home*/
 
 .welcomebox {
   margin-top: 150px;
@@ -407,6 +271,162 @@ nav a:hover {
   text-decoration: none;
 }
 
+/*Checkout*/
+
+.checkouttext {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.checkouttext h1 {
+  color: #1b203d;
+}
+
+/*Home images*/
+
+.mainimages {
+  display: block;
+  float: left;
+}
+
+.mainimages2 {
+  float: right;
+  display: block;
+}
+
+.mainimages img {
+  margin-top: 150px;
+  margin-left: 40px;
+  height: 246px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f25f20;
+}
+
+.mainimages2 img {
+  margin-top: 150px;
+  margin-right: 40px;
+  height: 246px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f25f20;
+}
+
+/*Account*/
+
+#signup {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+#signup h4 {
+  color: #f25f20;
+}
+
+#signin {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.form {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
+}
+
+.form2 {
+    display: block;
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+}
+
+.phone {
+  text-align: center;
+}
+
+.phone h1 {
+  font-size: 18px;
+}
+
+.mail {
+  text-align: center;
+}
+
+.mail h1 {
+  font-size: 18px;
+}
+
+
+
+
+/*Contact*/
+
+
+.pressbox {
+  border-color: #f25f20;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 10px 10px 10px;
+  background-color: #1b203d;
+  width: 110px;
+  height: 90px;
+}
+
+
+
+.flexboxcontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+/*Games*/
+
+.gamecolumn {
+  background-color: #1b203d;
+    margin-left: 25%;
+    margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f25f20;
+  border-radius: 20px 20px 20px 20px;
+  height: 300px;
+}
+
+
+
+.gamecovers {
+  margin: 25px;
+  height: 113px;
+  width: 81px;
+}
+
+.gamecovers img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f25f20;
+  align-items: center;
+  width: 80px;
+  height: 113px;
+}
+
+
 .action {
   margin: auto;
   margin-top: 50px;
@@ -424,6 +444,11 @@ nav a:hover {
   color: #f25f20;
   font-size: 17px;
 }
+
+.fa-shopping-cart {
+  padding: 2px 2px 2px 2px;
+}
+
 
 .productcta {
   display: flex;
@@ -468,17 +493,8 @@ nav ul {
   padding: 0;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
 
-/*Media Queries*/
+/*Media Queries for big devices*/
 
 @media only screen and (min-width: 992px) {
   #hamburger-m-m {
@@ -490,9 +506,11 @@ ul {
   }
 }
 
-
+/*Media Queries for small devices*/
 
 @media only screen and (max-width: 991px) {
+  
+
   
   /*Navigation*/
   
@@ -521,13 +539,13 @@ ul {
     flex-direction: column;
   }
 
+
   /*Body*/
 
 .home {
   background-image: none;
   background-color: #c5d1d9;
 }
-
 
 /*HomePage Images*/
 
@@ -550,12 +568,27 @@ ul {
 
 .gamecolumn {
   display: flex;
-  width: 100%;
-  min-height: 200px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: fit-content;
+  align-items: center;
+}
+
+.games h3 {
+  margin-bottom: 2px;
+}
+
+.games h2 {
+  margin-bottom: 2px;
 }
 
 .gamecovers {
-  display: block;
-}
+  margin-bottom: 55px;
 }
 
+
+/*Text in Games*/
+
+}
