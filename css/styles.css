@@ -464,19 +464,64 @@ nav a:hover {
   bottom: 0;
 }
 
-#hamburger-m-m:checked ~ nav {
-  display: block;
-}
-
 
 
 /*Media Queries*/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
+  #hamburger-m-m {
+    display: none;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  
+  /*Navigation*/
+  
   nav {
     display: none;
   }
+
+  .fa-bars {
+    color: #c5d1d9;
+  }
+
+  .menuicons {
+    display: none;
+  }
+
+  #hamburger-m-m {
+    display: none;
+  }
+  
   #hamburger-m-m:checked ~ nav {
     display: block;
+    margin-top: 10%;
   }
+
+  header {
+    flex-direction: column;
+  }
+
+  /*Body*/
+
+.home {
+  background-image: none;
+  background-color: #c5d1d9;
 }
+
+.mainimages {
+  display: none;
+}
+
+.mainimages2 {
+  display: none;
+}
+}
+
