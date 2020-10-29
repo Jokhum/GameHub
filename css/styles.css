@@ -464,7 +464,19 @@ nav a:hover {
   bottom: 0;
 }
 
+nav ul {
+  padding: 0;
+}
 
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 
 /*Media Queries*/
 
@@ -488,8 +500,9 @@ nav a:hover {
     display: none;
   }
 
+
   .fa-bars {
-    color: #c5d1d9;
+    color: #f25f20;
   }
 
   .menuicons {
@@ -502,7 +515,6 @@ nav a:hover {
   
   #hamburger-m-m:checked ~ nav {
     display: block;
-    margin-top: 10%;
   }
 
   header {
@@ -516,12 +528,34 @@ nav a:hover {
   background-color: #c5d1d9;
 }
 
+
+/*HomePage Images*/
+
 .mainimages {
   display: none;
 }
 
 .mainimages2 {
   display: none;
+}
+
+/*HomePage WelcomeBox*/
+
+.welcomebox {
+  margin-top: 10vw;
+  width: fit-content;
+}
+
+/*Games*/
+
+.gamecolumn {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+}
+
+.gamecovers {
+  display: block;
 }
 }
 
