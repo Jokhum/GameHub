@@ -68,14 +68,10 @@ h5 {
 header {
   background-image: url("../images/WebsiteHeader1.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   max-height: 200px;
-  text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border: 1px #f25f20 solid;
 }
 
@@ -86,13 +82,6 @@ header {
   margin-left: 15px;
 }
 
-.menuicons {
-  color: #f2f2f2;
-  float: right;
-  bottom: 0;
-  margin-top: 120px;
-  z-index: inherit;
-}
 
 .Icons {
   margin-right: 7px;
@@ -102,12 +91,20 @@ header {
 
 /*Navigation*/
 
+.nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px;
+}
 
 .search {
   padding: 6px;
-  border: none;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
-
 
 nav li {
   display: inline-block;
@@ -123,13 +120,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.navheader {
-  left: 50%;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  bottom: 0;
-}
 
 .navbutton {
   text-align: center;
@@ -469,6 +459,18 @@ nav a:hover {
   font-size: 18px;
 }
 
+#register-button {
+  margin: auto;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px #f25f20 solid;
+  border-radius: 20px 20px 20px 20px;
+  background-color:#1b203d;
+  padding: 10px 35px 10px 25px;
+  width: 120px;
+  text-align: center;
+  margin-top: 0px;
+}
 
 
 
@@ -546,9 +548,16 @@ nav a:hover {
 }
 
 .fa-shopping-cart {
+  color: #f25f20;
+  background-color: #1b203d;
   padding: 2px 2px 2px 2px;
 }
 
+.fa-shopping-cart:hover {
+  background-color: #f25f20;
+  color: #1b203d;
+  padding-right: 3px;
+}
 
 .productcta {
   display: flex;
@@ -598,6 +607,10 @@ nav ul {
 
 @media only screen and (min-width: 992px) {
   #hamburger-m-m {
+    display: none;
+  }
+
+  .hamburgermenu {
     display: none;
   }
 
