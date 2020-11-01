@@ -27,6 +27,9 @@ body {
   background-image: url(../images/websitebackgroundmain.jpg);
 }
 
+.home2 {
+  background-image: url(../images/websitebackground2.jpg);
+}
 
 
 h1 {
@@ -461,6 +464,10 @@ nav a:hover {
 
 /*Account*/
 
+#register-header {
+  text-align: center;
+}
+
 #signup {
   padding-top: 10px;
   margin-top: 10px;
@@ -469,7 +476,18 @@ nav a:hover {
   text-align: center;
 }
 
-#signup h4 {
+.toptextregistration {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.toptextregistration h4 {
+  color: #f25f20;
+}
+
+.registrationlabel {
   color: #f25f20;
 }
 

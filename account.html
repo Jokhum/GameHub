@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="home2">
     <header>
         <a href="index.html"> <img src="images/GameHub_Logo.jpg" alt="Logo of Gamehub" class="logo"/></a>
         <label for="hamburger-m-m" class="hamburgermenu"><i class="fas fa-bars"></i></label>
@@ -43,21 +43,23 @@
         </nav>
     </header>
     <main>
+        <div class="toptextregistration">
         <h4>Register</h4>
+    </div>
       <div id="signup">
           <div>
       <form>
-          <label for="firstname">First Name</label>
+          <label for="firstname" class="registrationlabel">First Name</label>
           <input type="text" name="name" id="firstname" class="form">
-          <label for="lastname">Last Name</label>
+          <label for="lastname" class="registrationlabel">Last Name</label>
           <input type="text" name="name" id="lasttname" class="form">
-          <label for="phone">Phone Number</label>
+          <label for="phone" class="registrationlabel">Phone Number</label>
           <input type="tel" name="phone" id="phone" class="form">
-          <label for="email">E-Mail</label>
+          <label for="email" class="registrationlabel">E-Mail</label>
           <input type="email" name="email" id="email" class="form">
-          <label for="username">Username</label>
+          <label for="username" class="registrationlabel">Username</label>
           <input type="text" name="username" id="username" class="form">
-          <label for="password">Password</label>
+          <label for="password" class="registrationlabel">Password</label>
           <input type="text" name="password" id="password" class="form">
           </form>
         </div>
@@ -66,12 +68,14 @@
     <div id="register-button">
         <a href="regcomplete.html" id="register-b">Register Now!</a>
       </div>
+      <div class="toptextregistration">
+        <h4>Register</h4>
+    </div>
         <div id="signin">
             <form>
-                <h4>Allready a member?</h4>
-                <label for="username">Username:</label>
+                <label for="username" class="registrationlabel">Username:</label>
                 <input type="text" id="username2" name="username2" class="form2">
-                <label for="password">Password:</label>
+                <label for="password" class="registrationlabel">Password:</label>
                 <input type="password" id="password2" name="password2" class="form2">
             </form>
         </div>
