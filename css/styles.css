@@ -9,6 +9,7 @@ main{
   min-height: 100vh;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +22,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
-
 
 .home {
   background-image: url(../images/websitebackgroundmain.jpg);
@@ -105,6 +105,20 @@ header {
   padding: 6px;
   border: 1px solid #f25f20;
   border-radius: 20px;
+  flex: 1 0 0;
+}
+
+.navheader {
+  display: flex;
+  justify-content: center;
+  flex: 2 0 0;  
+}
+
+.menuicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1 0 0;
 }
 
 nav li {
@@ -521,6 +535,10 @@ nav a:hover {
 }
 
 .hero-text {
+  padding: 5%;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
+  background-color: #1b203d;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -568,11 +586,19 @@ nav a:hover {
 
 /*Games*/
 
+.gamesh1 {
+  margin-top: 2%;
+}
+
+.gamesh1 h1{
+  color: #1b203d;
+}
+
 .gamecolumn {
   background-color: #1b203d;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   border-style: solid;
@@ -639,6 +665,102 @@ nav a:hover {
   background-color: #f25f20;
   color: #1b203d;
 }
+
+/*Search Results*/
+
+
+.search1 {
+  width: 40%;
+  background-color: #1b203d;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
+}
+
+.search2 {
+  width: 40%;
+  background-color: #1b203d;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
+}
+
+
+.searchresults {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 10% 10px 10%;
+}
+
+.searchresults {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 10% 10px 10%;
+}
+
+.searchresults h3, h4 {
+  color: #c5d1d9;
+  font-size: 20px;
+  text-align: left;
+}
+
+.searchresults img {
+  border: 1px solid #f25f20;
+  max-height: 80px;
+  max-width: 50px;
+}
+
+
+/* My Page*/
+
+
+.my-page-text {
+  margin: 2%;
+}
+
+.my-page-text h1 {
+  color: #1b203d;
+}
+.account-options h1 {
+  font-size: 15px;
+  margin: 5px 0px 5px 0px;
+}
+
+.account-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.left-bar {
+  border: 1px solid #f25f20;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #1b203d;
+  width: 10%;
+}
+
+.right-bar {
+    border: 1px solid #f25f20;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1b203d;
+    width: 10%;
+}
+
 /*Footer*/
 
 .footermenu {
@@ -728,6 +850,9 @@ nav ul {
     color: #f25f20;
   }
 
+  .fa-search {
+    padding-top: 5px;
+  }
 
   #hamburger-m-m {
     display: none;
@@ -739,8 +864,15 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1b203d;
+    border: 1px solid #f25f20;
+    border-radius: 20px;
+    padding-top: 3px;
   }
 
+  .search {
+    margin-right: 5px;
+  }
   header {
     flex-direction: column;
   }
@@ -806,6 +938,25 @@ nav ul {
 }
 
 
-/*Text in Games*/
+/*Account Page*/
+
+.form {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.form2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
 
 }
