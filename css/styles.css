@@ -164,6 +164,7 @@ nav a:hover {
   border-bottom: 1px solid black;
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 2%;
 }
 
 .shoppingcarttext h1 {
@@ -172,7 +173,7 @@ nav a:hover {
 
 .purchasedgames {
   display: flex;
-  margin-top: 10px;
+  margin-top: 2%;
   border: 1px #f25f20 solid;
   background-color: #1b203d;
   align-items: center;
@@ -254,7 +255,6 @@ nav a:hover {
 .welcomebox {
   margin-top: 150px;
   margin-right: auto;
-  display: inline-block;
   background-color: #1b203d;
   border-color: #f25f20;
   border-width: 1px;
@@ -264,6 +264,11 @@ nav a:hover {
   height: 246px;
   border-style: solid;
   width: 40vw;
+  border-radius: 20px;
+}
+
+.welcomebox h1 {
+  margin-top: 5%;
 }
 
 .welcomebox h2 {
@@ -273,12 +278,27 @@ nav a:hover {
   color: #f25f20;
 }
 
-.storebutton {
+.action {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#storebutton {
   font-size: 16px;
+  margin-top: 30px;
   text-align: center;
   background-color: #1b203d;
   color: #f2f2f2;
   text-decoration: none;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+#storebutton:hover {
+  background-color: #f25f20;
+  color: #1b203d;
 }
 
 /*Checkout*/
@@ -324,6 +344,8 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
 
 
@@ -334,6 +356,8 @@ nav a:hover {
   background-color: #1b203d;
   margin: 20px;
   padding: 20px;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
 
 .checkoutmethod h1 {
@@ -353,7 +377,7 @@ nav a:hover {
 .flexboxpayment {
     display: flex;
     justify-content: center;
-    margin: 10px 10% 10px 10%;
+    align-items: center;
 }
 
 .paymentmethod {
@@ -364,6 +388,8 @@ nav a:hover {
   margin: 20px;
   margin-right: 65px;
   padding: 20px;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
 
 .paymentmethod h1 {
@@ -391,7 +417,7 @@ nav a:hover {
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
   background-color:#1b203d;
-  padding: 10px 35px 10px 25px;
+  padding: 10px 25px 10px 25px;
   width: 120px;
   text-align: center;
   align-items: right;
@@ -454,6 +480,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+
 .form {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -480,6 +507,7 @@ nav a:hover {
 
 .mail {
   text-align: center;
+  margin-top: 2%;
 }
 
 .mail h1 {
@@ -625,17 +653,6 @@ nav a:hover {
   height: 113px;
 }
 
-
-.action {
-  margin: auto;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #f25f20;
-  border: 1px solid #f25f20;
-  max-width: 100px;
-}
 
 .add-to-cart {
   background-color: #1b203d;
@@ -817,7 +834,6 @@ nav ul {
 @media only screen and (max-width: 991px) {
   
 
-  
   /*Navigation*/
   
   .nav {
@@ -887,7 +903,7 @@ nav ul {
   /*Body*/
 
  .logo {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
  }
 
@@ -909,7 +925,7 @@ nav ul {
 /*HomePage WelcomeBox*/
 
 .welcomebox {
-  margin-top: 50%;
+  margin-top: 30%;
   width: fit-content;
 }
 
@@ -958,5 +974,86 @@ nav ul {
   width: 50%;
 }
 
+/*Checkout*/
+
+.gamestobuy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkoutgames {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#methodinfotext {
+  display: none;
+}
+
+.flexboxpayment {
+  flex-direction: column;
+  align-items: center;
+}
+
+.paymentmethod {
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-button {
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  align-self: center;
+}
+
+.checkoutgames h4 {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0px 20px 0px;
+}
+
+.paymenttext h1 {
+  text-align: center;
+}
+
+/*Shopping Cart*/
+
+.shoppingcarttext {
+  flex-direction: column;
+}
+
+.shoppingcarttext p {
+  display: none;
+}
+
+.purchasedgames {
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buy-game-one {
+  margin-left: 10px;
+}
+
+#gamesinbasket {
+  position: relative;
+  margin-left: 5px;
+}
+
+#quantity {
+  position: relative;
+  margin: 30px;
+}
+
+#pricetag {
+  position: relative;
+  margin: 10px;
+}
 
 }
