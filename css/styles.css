@@ -537,6 +537,11 @@ nav a:hover {
   justify-content: center;
 }
 
+#register-button:hover {
+  background: #f25f20;
+  color: #1b203d;
+}
+
 #register-b {
   margin: auto;
   text-decoration: none;
