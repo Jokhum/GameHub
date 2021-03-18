@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/clr2fch.css" />
-    <script
-      src="https://kit.fontawesome.com/41fed443ad.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/41fed443ad.js" crossorigin="anonymous"> </script>
+    <script src="js/register.js"></script>
     <!-- Hotjar Tracking Code for https://pw-gamehub.netlify.app/ -->
 <script>
   (function(h,o,t,j,a,r){
@@ -73,11 +71,9 @@
     </div>
       <div id="signup">
           <div>
-      <form>
-          <label for="firstname" class="registrationlabel">First Name:</label>
-          <input type="text" name="name" id="firstname" class="form">
-          <label for="lastname" class="registrationlabel">Last Name:</label>
-          <input type="text" name="name" id="lasttname" class="form">
+      <form id="registration-form">
+          <label for="fullname" class="registrationlabel">Full Name:</label>
+          <input type="text" name="name" id="fullName" class="form">
           <label for="phone" class="registrationlabel">Phone Number:</label>
           <input type="tel" name="phone" id="phone" class="form">
           <label for="email" class="registrationlabel">E-Mail:</label>
@@ -86,27 +82,23 @@
           <input type="text" name="username" id="username" class="form">
           <label for="password" class="registrationlabel">Desired Password:</label>
           <input type="text" name="password" id="password" class="form">
+          <input type="submit" value="Submit" class="submit-button">
           </form>
         </div>
         </div>
     </div>
-    <div id="register-button">
-        <a href="regcomplete.html" id="register-b">Register Now!</a>
-      </div>
       <div class="toptextregistration">
-        <h4>Allready a member? Login Here</h4>
+        <h4>Allready a member? Login Here:</h4>
     </div>
         <div id="signin">
-            <form>
+            <form class="registration-form">
                 <label for="username" class="registrationlabel">Username:</label>
-                <input type="text" id="username2" name="username2" class="form2">
+                <input type="text" id="username2" name="username2" class="form">
                 <label for="password" class="registrationlabel">Password:</label>
-                <input type="password" id="password2" name="password2" class="form2">
+                <input type="password" id="password2" name="password2" class="form">
+                <input type="submit" value="Log in" class="submit-button">
             </form>
         </div>
-        <div id="register-button">
-            <a href="mypage.html" id="register-b">Login Now!</a>
-          </div>
     </main>
     <div class="footermenu">
       <div class="footer-text">

@@ -442,14 +442,21 @@ h4 {
   margin-left: 45%;
   margin-right: 45%;
   width: 10%;
+  border-radius: 5px;
 }
 
-.form2 {
-  display: block;
-  margin: 1rem 0;
-  margin-left: 45%;
-  margin-right: 45%;
-  width: 10%;
+.submit-button {
+  color: #1b203d;
+  background-color: #c5d1d9;
+  border: 1px #c5d1d9;
+  border-radius: 5px;
+  padding: 0.3rem 2rem;
+  margin: 1rem;
+}
+
+.submit-button:hover {
+  color: #1b203d;
+  background-color: #f25f20;
 }
 
 .phone {
@@ -467,47 +474,6 @@ h4 {
 
 .mail h1 {
   font-size: 18px;
-}
-
-#register-button {
-  display: flex;
-  justify-content: center;
-}
-
-#register-b:hover {
-  background-color: #f25f20;
-  color: #1b203d;
-}
-
-#register-b {
-  margin: auto;
-  text-decoration: none;
-  color: #fff;
-  border: 1px #f25f20 solid;
-  border-radius: 20px 20px 20px 20px;
-  background-color: #1b203d;
-  padding: 10px 25px 10px 25px;
-  width: 120px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-#login-button {
-  display: flex;
-  justify-content: center;
-}
-
-#login-b {
-  margin: auto;
-  text-decoration: none;
-  color: #fff;
-  border: 1px #f25f20 solid;
-  border-radius: 20px 20px 20px 20px;
-  background-color: #1b203d;
-  padding: 10px 25px 10px 25px;
-  width: 120px;
-  text-align: center;
-  margin-top: 0px;
 }
 
 /*Checkout Success*/
