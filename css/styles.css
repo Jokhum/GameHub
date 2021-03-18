@@ -1,14 +1,22 @@
 /*Body*/
+
+.navheader .active a {
+  background-color: #1b203d;
+  border: 1px solid #c5d1d9;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-main{
+main {
   padding-bottom: 100px;
   min-height: 100vh;
+  margin: 1rem 1rem;
 }
-
 
 body {
   margin: 0;
@@ -24,13 +32,8 @@ body {
 }
 
 .home {
-  background-image: url(../images/websitebackgroundmain.jpg);
+  background-color: #1b203d;
 }
-
-.home2 {
-  background-image: url(../images/websitebackground2.jpg);
-}
-
 
 h1 {
   text-align: center;
@@ -62,10 +65,8 @@ h4 {
 h5 {
   text-align: center;
   font-size: 18px;
-  color: #1b203d;
+  color: #c5d1d9;
 }
-
-
 
 /*Header*/
 
@@ -73,19 +74,16 @@ header {
   background-image: url("../images/WebsiteHeader1.jpg");
   background-position: center;
   background-size: cover;
-  max-height: 200px;
+  max-height: 250px;
   display: flex;
   flex-direction: row;
-  border: 1px #f25f20 solid;
+  justify-content: center;
 }
 
 .logo {
   max-width: 250px;
   border-radius: 20px 20px 20px 20px;
-  margin-top: 3px;
-  margin-left: 15px;
 }
-
 
 .Icons {
   margin-right: 7px;
@@ -95,59 +93,42 @@ header {
 
 /*Navigation*/
 
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 1rem 1rem;
+}
+
 .nav {
   display: flex;
   width: 100%;
   flex-direction: row;
+  margin: 10px 0 10px 0;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 10px;
 }
 
 .search {
-  padding: 6px;
+  padding: 6px 50px 6px 10px;
   border: 1px solid #f25f20;
   border-radius: 20px;
-  flex: 1 0 0;
-}
-
-.navheader {
-  display: flex;
-  justify-content: center;
-  flex: 2 0 0;  
-}
-
-.menuicons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex: 1 0 0;
 }
 
 nav li {
   display: inline-block;
   color: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 3.2vw;
 }
 
 nav a {
-  color: #f2f2f2;
+  color: #c5d1d9;
   text-decoration: none;
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
-
-
-.navbutton {
-  text-align: center;
-  border-style: solid;
-  border-radius: 20px 20px 20px 20px;
-  border-width: 1px;
-  border-color: #f25f20;
-  background-color: #1b203d;
-  padding: 5px 30px 5px 30px;
-  margin-left: 20px;
+  color: #f25f20;
 }
 
 /*ShoppingCart*/
@@ -155,7 +136,8 @@ nav a:hover {
 .shopping-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 2rem;
   gap: 20px;
 }
 
@@ -164,69 +146,46 @@ nav a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid black;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 2%;
+  border-bottom: 1px solid #c5d1d9;
+  padding: 2rem;
 }
 
-.shoppingcarttext h1 {
-  color: #1b203d;
+.shoppingcarttext p {
+  color: #c5d1d9;
 }
 
 .purchasedgames {
   display: flex;
-  margin-top: 2%;
-  border: 1px #f25f20 solid;
-  background-color: #1b203d;
+  justify-content: space-evenly;
   align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 20px 20px 20px 20px;
-  padding: 10px;
+  margin-top: 2rem;
 }
 
 .purchasedgames p {
   color: #c5d1d9;
 }
 
-#pricetag {
-  position: absolute;
-  margin-left: 56%;
-}
-
-#gamesinbasket {
-  position: absolute;
-  margin-left: 25%;
-}
-
-#quantity {
-  position: absolute;
-  margin-left: 40%;
-}
 #buy-game-one {
   display: flex;
-  margin-left: 10%;
   border: 1px #f25f20 solid;
-} 
+}
 
 .gametext {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
-
 
 #keep-shopping {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
-  padding: 10px 35px 10px 25px;
-  width: 120px;
+  background-color: #1b203d;
+  padding: 5px 10px 5px 10px;
   text-align: center;
   margin-top: 0px;
+  min-width: 35vw;
 }
 
 #keep-shopping:hover {
@@ -237,14 +196,14 @@ nav a:hover {
 
 #purchase {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
-  padding: 10px 35px 10px 25px;
-  width: 120px;
+  background-color: #1b203d;
+  padding: 5px 10px 5px 10px;
   text-align: center;
   margin-top: 0px;
+  min-width: 35vw;
 }
 
 #purchase:hover {
@@ -255,27 +214,27 @@ nav a:hover {
 
 /*Home*/
 
+.flex-contain-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10vh 5vh 5vh 5vh;
+}
+
 .welcomebox {
-  margin-top: 150px;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #1b203d;
-  border-color: #f25f20;
-  border-width: 1px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 246px;
-  border-style: solid;
-  width: 40vw;
-  border-radius: 20px;
+  max-height: 40vh;
 }
 
 .welcomebox h1 {
-  margin-top: 5%;
+  margin: 0 2% 2% 2%;
 }
 
 .welcomebox h2 {
-  margin-top: 5%;
+  margin: 2% 2% 2% 2%;
   text-align: center;
   font-size: 20px;
   color: #f25f20;
@@ -306,15 +265,14 @@ nav a:hover {
 
 /*Checkout*/
 
-
-
 .gamestobuy {
   display: flex;
   justify-content: space-evenly;
   margin: 10px 10% 10px 10%;
 }
 
-.gamestobuy h3, h4 {
+.gamestobuy h3,
+h4 {
   color: #c5d1d9;
   font-size: 20px;
   text-align: left;
@@ -351,7 +309,6 @@ nav a:hover {
   border-radius: 20px;
 }
 
-
 .checkoutmethod {
   display: flex;
   align-items: center;
@@ -368,7 +325,6 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-
 #methodinfotext {
   display: flex;
   flex-direction: row;
@@ -378,9 +334,9 @@ nav a:hover {
 }
 
 .flexboxpayment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .paymentmethod {
@@ -399,7 +355,9 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.paymenttext h1, h3, h4 {
+.paymenttext h1,
+h3,
+h4 {
   text-align: left;
 }
 
@@ -411,15 +369,14 @@ nav a:hover {
   margin-left: auto;
   justify-content: flex-end;
   align-self: flex-end;
-
 }
 
 #order {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
+  background-color: #1b203d;
   padding: 10px 25px 10px 25px;
   width: 120px;
   text-align: center;
@@ -434,32 +391,14 @@ nav a:hover {
 
 /*Home images*/
 
-.mainimages {
-  display: block;
-  float: left;
-}
-
-.mainimages2 {
-  float: right;
-  display: block;
-}
-
 .mainimages img {
-  margin-top: 150px;
-  margin-left: 40px;
-  height: 246px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
 
 .mainimages2 img {
-  margin-top: 150px;
-  margin-right: 40px;
-  height: 246px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
+  border: 1px solid #f25f20;
+  border-radius: 20px;
 }
 
 /*Account*/
@@ -498,7 +437,6 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-
 .form {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -509,10 +447,10 @@ nav a:hover {
 }
 
 .form2 {
-    display: block;
-    margin-left: 45%;
-    margin-right: 45%;
-    width: 10%;
+  display: block;
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
 }
 
 .phone {
@@ -545,10 +483,10 @@ nav a:hover {
 #register-b {
   margin: auto;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
+  background-color: #1b203d;
   padding: 10px 25px 10px 25px;
   width: 120px;
   text-align: center;
@@ -563,10 +501,10 @@ nav a:hover {
 #login-b {
   margin: auto;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
+  background-color: #1b203d;
   padding: 10px 25px 10px 25px;
   width: 120px;
   text-align: center;
@@ -604,17 +542,16 @@ nav a:hover {
 
 #back-home {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   border: 1px #f25f20 solid;
   border-radius: 20px 20px 20px 20px;
-  background-color:#1b203d;
+  background-color: #1b203d;
   padding: 10px 35px 10px 25px;
   width: 120px;
   text-align: center;
 }
 
 /*Contact*/
-
 
 .pressbox {
   border-color: #f25f20;
@@ -626,40 +563,46 @@ nav a:hover {
   height: 90px;
 }
 
-
-
 .flexboxcontainer {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-
 /*Games*/
 
-.gamesh1 {
-  margin-top: 2%;
+.games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.gamesh1 h1{
-  color: #1b203d;
+.games img {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.games h3 {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.games h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .gamecolumn {
-  background-color: #1b203d;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%;
   display: flex;
-  justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f25f20;
-  border-radius: 20px 20px 20px 20px;
+  justify-content: space-around;
   height: 300px;
 }
-
-
 
 .gamecovers {
   margin: 25px;
@@ -675,7 +618,6 @@ nav a:hover {
   width: 80px;
   height: 113px;
 }
-
 
 .add-to-cart {
   background-color: #1b203d;
@@ -699,6 +641,7 @@ nav a:hover {
 .productcta {
   display: flex;
   justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .add-to-cart:hover {
@@ -707,7 +650,6 @@ nav a:hover {
 }
 
 /*Search Results*/
-
 
 .search1 {
   width: 40%;
@@ -737,7 +679,6 @@ nav a:hover {
   border-radius: 20px;
 }
 
-
 .searchresults {
   display: flex;
   justify-content: space-evenly;
@@ -750,7 +691,8 @@ nav a:hover {
   margin: 10px 10% 10px 10%;
 }
 
-.searchresults h3, h4 {
+.searchresults h3,
+h4 {
   color: #c5d1d9;
   font-size: 20px;
   text-align: left;
@@ -762,9 +704,7 @@ nav a:hover {
   max-width: 50px;
 }
 
-
 /* My Page*/
-
 
 .my-page-text {
   margin: 2%;
@@ -794,11 +734,11 @@ nav a:hover {
 }
 
 .right-bar {
-    border: 1px solid #f25f20;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #1b203d;
-    width: 10%;
+  border: 1px solid #f25f20;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #1b203d;
+  width: 10%;
 }
 
 /*Footer*/
@@ -810,15 +750,25 @@ nav a:hover {
   justify-content: center;
   border-top-style: solid;
   border-width: 100%;
-  border-width: 2px;
+  border-width: 1px;
   width: 100%;
   height: 100px;
   position: fixed;
-  background-color: #c5d1d9;
+  background-color: #1b203d;
   bottom: 0;
   left: 0;
-  color: #1b203d;
+  color: #c5d1d9;
   text-decoration: underline;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-text p {
+  margin: 20px;
 }
 
 .mediaicons {
@@ -835,78 +785,77 @@ nav ul {
   padding: 0;
 }
 
-
 /*Media Queries for big devices*/
 
-@media only screen and (min-width: 992px) {
-  #hamburger-m-m {
-    display: none;
+@media only screen and (min-width: 1024px) {
+  /* Shop Buttons */
+
+  #keep-shopping {
+    min-width: 10vw;
   }
 
-  .hamburgermenu {
-    display: none;
-  }
-
-  .fa-bars {
-    display: none;
+  #purchase {
+    min-width: 10vw;
   }
 }
 
 /*Media Queries for small devices*/
 
-@media only screen and (max-width: 991px) {
-  
+@media only screen and (max-width: 1023px) {
+  /* Main */
+
+  li {
+    margin: 5px;
+  }
+
+  .top-nav {
+    margin: 2vh 0 2vh 0;
+  }
+
+  .navheader .active a {
+    color: #f25f20;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
 
   /*Navigation*/
-  
+
+  .nav li {
+    margin: 1rem 0;
+  }
+
   .nav {
-    display: none;
-    z-index: 95;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .searchbar {
-    display: flex;
-    justify-content: center;
-    margin-top: 2px;
-    margin-bottom: 5px;
-  }
   .navheader {
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    margin-right: 25px;
+    justify-content: space-evenly;
   }
 
+  .menuicons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
 
   .Icons {
     margin-left: 15px;
     margin-right: 15px;
   }
 
-  .fa-bars {
-    color: #f25f20;
-  }
-
   .fa-search {
     padding-top: 5px;
   }
 
-  #hamburger-m-m {
-    display: none;
-  }
-
-  
-  #hamburger-m-m:checked ~ nav {
+  .searchbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #1b203d;
-    border: 1px solid #f25f20;
-    border-radius: 20px;
-    padding-top: 3px;
+    justify-content: center;
+    width: 100vw;
   }
 
   .search {
@@ -916,167 +865,157 @@ nav ul {
     flex-direction: column;
   }
 
-  .hamburgermenu {
-    margin-left: 3px;
-    margin-bottom: 2px;
+  /*Body*/
+
+  .logo {
+    display: none;
+    margin-left: 0;
+    padding: 0;
+    max-height: 80px;
+  }
+
+  .home {
+    background-image: none;
+    background-color: #1b203d;
+  }
+
+  /*HomePage Images*/
+
+  .mainimages {
+    display: none;
+  }
+
+  .mainimages2 {
+    display: none;
+  }
+
+  /*HomePage WelcomeBox*/
+
+  .welcomebox {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*Games*/
+
+  .gamecolumn {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .games h3 {
+    margin-bottom: 2px;
+  }
+
+  .games h2 {
+    margin-bottom: 2px;
+  }
+
+  .gamecovers {
+    margin-bottom: 55px;
+  }
+
+  /*Account Page*/
+
+  .form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+
+  .form2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+
+  /*Checkout*/
+
+  .gamestobuy {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkoutgames {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #methodinfotext {
+    display: none;
+  }
+
+  .flexboxpayment {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paymentmethod {
+    margin: 0;
+    flex-direction: column;
     justify-content: center;
   }
 
-  /*Body*/
+  .order-button {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    align-self: center;
+  }
 
- .logo {
-  margin-left: 0;
-  padding: 0;
- }
+  .checkoutgames h4 {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0px 20px 0px;
+  }
 
-.home {
-  background-image: none;
-  background-color: #c5d1d9;
-}
+  .paymenttext h1 {
+    text-align: center;
+  }
 
-/*HomePage Images*/
+  /*Shopping Cart*/
 
-.mainimages {
-  display: none;
-}
+  .shoppingcarttext {
+    flex-direction: column;
+  }
 
-.mainimages2 {
-  display: none;
-}
+  .shoppingcarttext p {
+    display: none;
+  }
 
-/*HomePage WelcomeBox*/
+  .purchasedgames {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.welcomebox {
-  margin-top: 30%;
-  width: fit-content;
-}
+  #gamesinbasket {
+    position: relative;
+    margin-left: 5px;
+  }
 
-/*Games*/
+  #quantity {
+    position: relative;
+    margin: 10px;
+  }
 
-.gamecolumn {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 100vh;
-  align-items: center;
-}
-
-.games h3 {
-  margin-bottom: 2px;
-}
-
-.games h2 {
-  margin-bottom: 2px;
-}
-
-.gamecovers {
-  margin-bottom: 55px;
-}
-
-
-/*Account Page*/
-
-.form {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: block;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
-}
-
-.form2 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: block;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
-}
-
-/*Checkout*/
-
-.gamestobuy {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.checkoutgames {
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#methodinfotext {
-  display: none;
-}
-
-.flexboxpayment {
-  flex-direction: column;
-  align-items: center;
-}
-
-.paymentmethod {
-  margin: 0;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.order-button {
-  margin-top: 30px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0;
-  align-self: center;
-}
-
-.checkoutgames h4 {
-  text-align: center;
-  font-size: 14px;
-  margin: 20px 0px 20px 0px;
-}
-
-.paymenttext h1 {
-  text-align: center;
-}
-
-/*Shopping Cart*/
-
-.shoppingcarttext {
-  flex-direction: column;
-}
-
-.shoppingcarttext p {
-  display: none;
-}
-
-.purchasedgames {
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buy-game-one {
-  margin-left: 10px;
-}
-
-#gamesinbasket {
-  position: relative;
-  margin-left: 5px;
-}
-
-#quantity {
-  position: relative;
-  margin: 30px;
-}
-
-#pricetag {
-  position: relative;
-  margin: 10px;
-}
-
+  #pricetag {
+    position: relative;
+    margin: 10px;
+  }
 }

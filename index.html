@@ -32,47 +32,53 @@
   </head>
   <body class="home">
     <header>
-      <a href="index.html">
-        <img src="images/GameHub_Logo.jpg" alt="Logo of Gamehub" class="logo"
-      /></a>
-      <label for="hamburger-m-m" class="hamburgermenu"
-        ><i class="fas fa-bars"></i
-      ></label>
-      <input type="checkbox" id="hamburger-m-m" />
-      <nav class="nav">
-        <div class="searchbar">
-          <input type="text" placeholder="Search..." class="search" />
-          <a href="search-results.html"><i class="fas fa-search"></i></a>
-        </div>
-        <div class="navheader">
-          <li class="navbutton">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navbutton">
-            <a href="games.html">Games</a>
-          </li>
-          <li class="navbutton">
-            <a href="contact.html">Contact</a>
-          </li>
-        </div>
-        <div class="menuicons">
-          <a href="shoppingcart.html">
+      <div class="top-nav">
+        <div class="header-logo">
+          <a href="index.html">
             <img
-              src="images/shopping-cart.png"
-              class="Icons"
-              alt="Shopping Cart"
-            />
-          </a>
-          <a href="favourites.html">
-            <img src="images/star.png" class="Icons" alt="Favourites" />
-          </a>
-          <a href="account.html">
-            <img src="images/profileicon.png" class="Icons" alt="My Page" />
-          </a>
+              src="images/GameHub_Logo.jpg"
+              alt="Logo of Gamehub"
+              class="logo"
+          /></a>
         </div>
-      </nav>
+        <nav class="nav">
+          <div class="searchbar">
+            <input type="text" placeholder="Search..." class="search" />
+            <a href="search-results.html"><i class="fas fa-search"></i></a>
+          </div>
+          <div class="navheader">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navbutton">
+              <a href="games.html">Games</a>
+            </li>
+            <li class="navbutton">
+              <a href="contact.html">Contact</a>
+            </li>
+          </div>
+          <div class="menuicons">
+            <a href="shoppingcart.html">
+              <img
+                src="images/shopping-cart.png"
+                class="Icons"
+                alt="Shopping Cart"
+              />
+            </a>
+            <a href="favourites.html">
+              <img src="images/star.png" class="Icons" alt="Favourites" />
+            </a>
+            <a href="account.html">
+              <img src="images/profileicon.png" class="Icons" alt="My Page" />
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="flex-contain-index">
+      <div class="mainimages">
+        <img src="images/HPimage2.jpg" alt="Picture of a Gamer" />
+      </div>
       <div class="welcomebox">
         <h1>Welcome to Gamehub</h1>
         <h2>
@@ -83,17 +89,16 @@
           <a href="games.html" id="storebutton">Go To Store</a>
         </div>
       </div>
-      <div class="mainimages">
-        <img src="images/HPimage2.jpg" alt="Picture of a Gamer" />
-      </div>
       <div class="mainimages2">
         <img src="images/HPImage1.jpg" alt="Picture of another Gamer" />
       </div>
     </main>
     <div class="footermenu">
-      <p>Shortcuts</p>
-      <p>News</p>
-      <p>Support</p>
+      <div class="footer-text">
+        <p>Shortcuts</p>
+        <p>News</p>
+        <p>Support</p>
+      </div>
       <div class="socialmedia">
         <a href="www.facebook.com">
           <img src="images/facebook.png" class="mediaicons" alt="Facebook" />
