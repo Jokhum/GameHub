@@ -1,11 +1,12 @@
 /* FORM */
 
-const form = document.querySelector("#registration-form");
-const fullName = document.querySelector("#name");
+const form = document.querySelector("#registrationForm");
+const loginForm = document.querySelector("#loginForm")
+const fullName = document.querySelector("#fullName");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
-const userName = document.querySelector("#username");
-const password = document.querySelector("#password");
+const password = document.querySelector("#password")
+const username = document.querySelector("#username")
 const successMsg = document.querySelector("#success-form")
 
 // Form Function
@@ -15,46 +16,20 @@ function validateRegistration(event) {
     event.preventDefault();
 
     // Validate FullName length 
-    if (checkLength(fullName.value, 0) === true) {
+    if (checkLength(fullName.value, 6) === true) {
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
     }
 
-    // Validate Adress length
+    // Validate Phone length
 
-    if (checkLength(phone.value, 10) === true) {
-        adressError.sdresstyle.display = "none";
+    if (checkLength(phone.value, 9) === true) {
+        phoneError.sdresstyle.display = "none";
     } else {
-        adressError.style.display = "block";
-    }
-
-    // Validate Subject length
-
-    if (checkLength(userName.value, 10) === true) {
-        subjectError.style.display = "none";
-    } else {
-        subjectError.style.display = "block";
-    }
-
-    // Validate Username Length
-
-    if (checkLength(userName.value, 10) === true) {
-        subjectError.style.display = "none";
-    } else {
-        subjectError.style.display = "block";
+        phoneError.style.display = "block";
     }
     
-    
-    // Validate Password Length
-
-    if (checkLength(userName.value, 10) === true) {
-        subjectError.style.display = "none";
-    } else {
-        subjectError.style.display = "block";
-    }
-    
-
     // Validate e-mail format
 
     if (validateEmail(email.value) === true) {
@@ -67,6 +42,33 @@ function validateRegistration(event) {
 
 
 form.addEventListener("submit", validateRegistration);
+
+// Login Validation Function
+
+function validateLogin(event) {
+
+    event.preventDefault();
+
+    // Validate Username length 
+    if (checkLength(username.value, 6) === true) {
+        usernameError.style.display = "none";
+    } else {
+        usernameError.style.display = "block";
+    }
+
+    // Validate Password length
+
+    if (checkLength(password.value, 8) === true) {
+        passwordError.sdresstyle.display = "none";
+    } else {
+        passwordError.style.display = "block";
+    }
+    
+}
+
+loginForm.addEventListener("submit", validateLogin);
+
+
 
 // Length Validation Function
 

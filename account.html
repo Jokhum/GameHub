@@ -7,7 +7,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/clr2fch.css" />
     <script src="https://kit.fontawesome.com/41fed443ad.js" crossorigin="anonymous"> </script>
-    <script src="js/register.js"></script>
     <!-- Hotjar Tracking Code for https://pw-gamehub.netlify.app/ -->
 <script>
   (function(h,o,t,j,a,r){
@@ -70,33 +69,38 @@
         <h4>Register</h4>
     </div>
       <div id="signup">
-          <div>
-      <form id="registration-form">
+      <form id="registrationForm">
+        <div class="form-item">
           <label for="fullname" class="registrationlabel">Full Name:</label>
           <input type="text" name="name" id="fullName" class="form">
+          <div id="fullNameError" class="form-error">Please enter your full name.</div>
+        </div>
+        <div class="form-item">
           <label for="phone" class="registrationlabel">Phone Number:</label>
           <input type="tel" name="phone" id="phone" class="form">
+          <div id="phoneError" class="form-error">Please enter a valid telephone number.</div>
+        </div>
+        <div class="form-item">
           <label for="email" class="registrationlabel">E-Mail:</label>
           <input type="email" name="email" id="email" class="form">
-          <label for="username" class="registrationlabel">Desired Username:</label>
-          <input type="text" name="username" id="username" class="form">
-          <label for="password" class="registrationlabel">Desired Password:</label>
-          <input type="text" name="password" id="password" class="form">
-          <input type="submit" value="Submit" class="submit-button">
-          </form>
+          <div id="emailError" class="form-error">Please enter a valid e-mail adress.</div>
         </div>
+          <button>Submit</button>
+          </form>
         </div>
     </div>
       <div class="toptextregistration">
         <h4>Allready a member? Login Here:</h4>
     </div>
         <div id="signin">
-            <form class="registration-form">
+            <form id="loginForm">
                 <label for="username" class="registrationlabel">Username:</label>
-                <input type="text" id="username2" name="username2" class="form">
+                <input type="text" id="username" name="username" class="form">
+                <div id="usernameError" class="form-error">Please enter a valid username.</div>
                 <label for="password" class="registrationlabel">Password:</label>
-                <input type="password" id="password2" name="password2" class="form">
-                <input type="submit" value="Log in" class="submit-button">
+                <input type="password" id="password" name="password" class="form">
+                <div id="passwordError" class="form-error">Wrong password. Please try again.</div>
+                <button>Log in</button>
             </form>
         </div>
     </main>
@@ -121,5 +125,6 @@
         </a>
       </div>
     </div>
+    <script src="js/register.js"></script>
   </body>
 </html>

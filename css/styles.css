@@ -443,9 +443,16 @@ h4 {
   margin-right: 45%;
   width: 10%;
   border-radius: 5px;
+  text-align: center;
 }
 
-.submit-button {
+.form-error {
+  display: none;
+  color: red;
+  margin: 5px 0 15px 0;
+}
+
+button {
   color: #1b203d;
   background-color: #c5d1d9;
   border: 1px #c5d1d9;
@@ -454,7 +461,7 @@ h4 {
   margin: 1rem;
 }
 
-.submit-button:hover {
+button:hover {
   color: #1b203d;
   background-color: #f25f20;
 }
