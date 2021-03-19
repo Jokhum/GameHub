@@ -22,51 +22,65 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   </head>
-  <body>
+  <body class="home">
     <header>
-        <a href="index.html"> <img src="images/GameHub_Logo.jpg" alt="Logo of Gamehub" class="logo"/></a>
-        <label for="hamburger-m-m" class="hamburgermenu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-m-m">
+      <div class="top-nav">
+        <div class="header-logo">
+          <a href="index.html">
+            <img
+              src="images/GameHub_Logo.jpg"
+              alt="Logo of Gamehub"
+              class="logo"
+          /></a>
+        </div>
+      </div>
       <nav class="nav">
         <div class="searchbar">
-          <input type="text" placeholder="Search..." class="search">
+          <input type="text" placeholder="Search..." class="search" />
           <a href="search-results.html"><i class="fas fa-search"></i></a>
         </div>
-          <div class="navheader">
-            <li class="navbutton"> 
-              <a href="index.html">Home</a>
-            </li>
-            <li class="navbutton">
-              <a href="games.html">Games</a>
-            </li>
-            <li class="navbutton">
-              <a href="contact.html">Contact</a>
-            </li>
-          </div>
-          <div class="menuicons">
-            <a href="shoppingcart.html"> <img src="images/shopping-cart.png" class="Icons" alt="Shopping Cart">
-              </a>
-              <a href="favourites.html"> <img src="images/star.png" class="Icons" alt="Favourites">
-              </a>
-            <a href="account.html"> <img src="images/profileicon.png" class="Icons" alt="My Page">
-            </a>
-      </div>
-        </nav>
+        <div class="navheader">
+          <li class="navbutton">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navbutton">
+            <a href="games.html">Games</a>
+          </li>
+          <li class="navbutton">
+            <a href="contact.html">Contact</a>
+          </li>
+        </div>
+        <div class="menuicons">
+          <a href="shoppingcart.html">
+            <img
+              src="images/shopping-cart.png"
+              class="Icons"
+              alt="Shopping Cart"
+            />
+          </a>
+          <a href="favourites.html">
+            <img src="images/star.png" class="Icons" alt="Favourites" />
+          </a>
+          <a href="account.html">
+            <img src="images/profileicon.png" class="Icons" alt="My Page" />
+          </a>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="checkouttext">
+        <div class="shoppingcarttext">
             <h1>Checkout</h1>
           </div>
           <div class="gamestobuy">
           <div class="checkoutgames">
               <img src="images/gamecover8.png">
               <h1>Game 1</h1>
-              <h4>Game description</h4>
-              <h3>$$ Price</h3>
+              <h2>Game description</h2>
+              <h4>$$ Price</h4>
           </div>
           <div class="checkoutmethod">
               <div class="methodtext">
-            <h1>How do you want the products delivered?</h1>
+            <h2>How do you want the products delivered?</h2>
             <section id="methodinfotext">
             <p>How?</p>
             <p>Where?</p>
@@ -90,10 +104,10 @@
         <div class="flexboxpayment">
         <div class="paymentmethod">
             <div class="paymenttext">
-                <h1>How do you want to pay?</h1>
+                <h2>How do you want to pay?</h2>
                 <div class="creditcardbox">
                 <input type="checkbox" id="creditcard" name="creditcard">
-                <label for="creditcard" class="paymentlabel">Your Cards ( Visa, Mastercard etc.)</label>
+                <label for="creditcard" class="paymentlabel">Your Cards</label>
             </div>
                 <div class="invoicebox">
                 <input type="checkbox" id="invoice" name="invoice">
