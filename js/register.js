@@ -7,7 +7,6 @@ const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const password = document.querySelector("#password")
 const username = document.querySelector("#username")
-const successMsg = document.querySelector("#success-form")
 
 // Form Function
 
@@ -16,30 +15,43 @@ function validateRegistration(event) {
     event.preventDefault();
 
     // Validate FullName length 
-    if (checkLength(fullName.value, 6) === true) {
+    if (checkLength(fullName.value, 6)) {
+
         fullNameError.style.display = "none";
+
     } else {
+
         fullNameError.style.display = "block";
     }
 
     // Validate Phone length
 
-    if (checkLength(phone.value, 9) === true) {
-        phoneError.sdresstyle.display = "none";
+    if (phoneNumber(phone.value)) {
+
+        phoneError.style.display = "none";
+
     } else {
+
         phoneError.style.display = "block";
+
     }
     
     // Validate e-mail format
 
-    if (validateEmail(email.value) === true) {
+    if (validateEmail(email.value)) {
+
         emailError.style.display = "none";
+  
     } else {
+
         emailError.style.display = "block";
+
+    }
+
+    if (checkLength(fullName.value, 6) && phoneNumber(phone.value) && validateEmail(email.value)) {
+        document.location.href = "./regcomplete.html";
     }
 }
-
-
 
 form.addEventListener("submit", validateRegistration);
 
@@ -50,20 +62,32 @@ function validateLogin(event) {
     event.preventDefault();
 
     // Validate Username length 
-    if (checkLength(username.value, 6) === true) {
+    if (checkLength(username.value, 6)) {
+
         usernameError.style.display = "none";
+
     } else {
+
         usernameError.style.display = "block";
+
     }
 
     // Validate Password length
 
-    if (checkLength(password.value, 8) === true) {
-        passwordError.sdresstyle.display = "none";
+    if (checkLength(password.value, 8)) {
+
+        passwordError.style.display = "none";
+
     } else {
+
         passwordError.style.display = "block";
+
     }
     
+    if (checkLength(username.value, 6) && checkLength(password.value, 8)) {
+
+        document.location.href = "./mypage.html";
+    }
 }
 
 loginForm.addEventListener("submit", validateLogin);
@@ -75,16 +99,36 @@ loginForm.addEventListener("submit", validateLogin);
 function checkLength(value, length) {
     
     if(value.trim().length >= length) {
+
         return true;
+
     } else {
+
         return false;
+
     }
 }
 
 // E-mail Validation Function
 
 function validateEmail(email) {
+
     const regEx = /\S+@\S+\.\S+/;
+
     const characterMatch = regEx.test(email);
+
     return characterMatch;
+
+}
+
+// Phonenumber Validation Function 
+
+function phoneNumber(input) {
+
+    const number = /^\(?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{3})$/;
+
+    const characterMatch = number.test(input);
+
+    return characterMatch;
+
 }
