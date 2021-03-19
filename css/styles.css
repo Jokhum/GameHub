@@ -213,7 +213,7 @@ nav a:hover {
 #keep-shopping {
   text-decoration: none;
   color: #fff;
-  border: 1px #f25f20 solid;
+  border: 1px #c5d1d9 solid;
   border-radius: 20px 20px 20px 20px;
   background-color: #1b203d;
   padding: 5px 10px 5px 10px;
@@ -231,7 +231,7 @@ nav a:hover {
 #purchase {
   text-decoration: none;
   color: #fff;
-  border: 1px #f25f20 solid;
+  border: 1px #c5d1d9 solid;
   border-radius: 20px 20px 20px 20px;
   background-color: #1b203d;
   padding: 5px 10px 5px 10px;
@@ -258,26 +258,18 @@ nav a:hover {
 .welcomebox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #1b203d;
   max-height: 40vh;
 }
 
-.welcomebox h1 {
-  margin: 0 2% 2% 2%;
-}
-
 .welcomebox h2 {
-  margin: 2% 2% 2% 2%;
-  text-align: center;
   font-size: 1rem;
 }
 
 .action {
   display: flex;
-  text-align: center;
   justify-content: center;
-  margin: 2vh 0;
 }
 
 #storebutton {
@@ -865,14 +857,6 @@ nav ul {
 
   .mainimages2 {
     display: none;
-  }
-
-  /*HomePage WelcomeBox*/
-
-  .welcomebox {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   /*Games*/
