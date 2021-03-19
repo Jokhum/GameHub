@@ -68,13 +68,26 @@
         <div class="shoppingcarttext">
       <h1>Your Shopping Cart</h1>
     </div>
+    <div class="games-cart">
     <div class="purchasedgames">
         <img src="images/Gamecover7.png" id="buy-game-one" alt="Game One">
         <h3 id="gamesinbasket">Game Title</h3>
-        <input class="cart-quantity-input" input="number" value="2">
-        <p id="pricetag">$78</p>
+        <input class="cart-quantity" input="number" value="2">
+        <span class="pricetag">$78</span>
         <button type="button" class="btn btn-danger">Remove</button>
     </div>
+    <div class="purchasedgames">
+      <img src="images/Gamecover7.png" id="buy-game-one" alt="Game One">
+      <h3 id="gamesinbasket">Game Title</h3>
+      <input class="cart-quantity" input="number" value="1">
+      <span class="pricetag">$39</span>
+      <button type="button" class="btn btn-danger">Remove</button>
+  </div>
+  <div class="cart-total">
+    <span class="cart-total-title">Total:</span>
+    <span class="cart-total-price">$117</span>
+</div>
+</div>
     <div class="shopping-buttons">
         <a href="games.html" id="keep-shopping">Keep Shopping</a>
         <a href="checkout.html" id="purchase">Purchase</a>
@@ -102,5 +115,6 @@
         </a>
       </div>
     </div>
+    <script src="js/shoppingcart.js"></script>
   </body>
 </html>

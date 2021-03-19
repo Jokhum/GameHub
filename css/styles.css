@@ -138,8 +138,33 @@ nav a:hover {
 }
 
 /*ShoppingCart*/
+.games-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.cart-quantity-input {
+.cart-total {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.cart-total-title {
+  color: #c5d1d9;
+  font-size: 2rem;
+}
+
+.cart-total-price {
+  color: #c5d1d9;
+  font-size: 2rem;
+}
+
+.pricetag {
+  color: #c5d1d9;
+}
+
+.cart-quantity {
   font-size: 0.9rem;
   height: 30px;
   width: 40px;
@@ -163,7 +188,6 @@ nav a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid #c5d1d9;
   padding: 2rem;
 }
 
@@ -253,17 +277,16 @@ nav a:hover {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin: 2vh 0;
 }
 
 #storebutton {
   font-size: 16px;
-  margin-top: 30px;
   text-align: center;
-  background-color: #1b203d;
   color: #f2f2f2;
   text-decoration: none;
   border: 1px solid #c5d1d9;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 10px 20px 10px 20px;
 }
 
@@ -327,7 +350,8 @@ nav a:hover {
 .paymentmethod {
   display: flex;
   align-items: center;
-  width: 40%;
+  justify-content: space-between;
+  width: 20%;
   background-color: #1b203d;
   margin: 20px;
   margin-right: 65px;
@@ -351,7 +375,6 @@ nav a:hover {
 }
 
 .order-button {
-  margin-left: auto;
   justify-content: flex-end;
   align-self: flex-end;
 }
@@ -359,7 +382,7 @@ nav a:hover {
 #order {
   text-decoration: none;
   color: #fff;
-  border: 1px #f25f20 solid;
+  border: 1px #c5d1d9 solid;
   border-radius: 20px 20px 20px 20px;
   background-color: #1b203d;
   padding: 10px 25px 10px 25px;
@@ -422,11 +445,13 @@ nav a:hover {
 }
 
 .form {
+  font-size: 1rem;
   margin: 1rem 0;
   display: block;
   margin-left: 45%;
   margin-right: 45%;
-  width: 10%;
+  width: 10vw;
+  height: 3vh;
   border-radius: 5px;
   text-align: center;
 }
@@ -539,21 +564,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .games img {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.games h3 {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.games h2 {
   display: flex;
   justify-content: center;
   margin: 0.5rem 0 0.5rem 0;
@@ -566,6 +581,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   height: 300px;
+  white-space: nowrap;
 }
 
 .gamecovers {
@@ -582,11 +598,21 @@ button:hover {
   height: 113px;
 }
 
-.add-to-cart {
-  background-color: #1b203d;
-  border: none;
+.store-item-title {
   color: #f25f20;
-  font-size: 17px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.store-item-price {
+  color: #c5d1d9;
+}
+
+.store-item-atc {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem 0.7rem;
 }
 
 .fa-shopping-cart {
@@ -599,12 +625,6 @@ button:hover {
   background-color: #f25f20;
   color: #1b203d;
   padding-right: 3px;
-}
-
-.productcta {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 0.5rem 0;
 }
 
 .add-to-cart:hover {
@@ -954,8 +974,7 @@ nav ul {
 
   .purchasedgames {
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem 0;
   }
 
   #gamesinbasket {
@@ -964,11 +983,6 @@ nav ul {
   }
 
   #quantity {
-    position: relative;
-    margin: 10px;
-  }
-
-  #pricetag {
     position: relative;
     margin: 10px;
   }
