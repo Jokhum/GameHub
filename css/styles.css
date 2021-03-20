@@ -735,11 +735,6 @@ nav ul {
     margin: 0;
   }
 
-  .navheader .active a {
-    border-color: #f25f20;
-    background-color: #1b203d;
-  }
-
   /*Navigation*/
 
   .nav li {
