@@ -1,6 +1,7 @@
 // REMOVING ITEMS FROM CART!
 
-const removeItemButton = document.getElementsByClassName("btn-danger")
+const removeItemButton = document.getElementsByClassName("remove-button")
+
 
 for (var i = 0; i < removeItemButton.length; i++) {
 
@@ -8,33 +9,80 @@ for (var i = 0; i < removeItemButton.length; i++) {
 
     button.addEventListener("click", function(event) {
 
-        const buttonPressed = event.target
+        const buttonClick = event.target
 
-        buttonPressed.parentElement.remove()
+        buttonClick.parentElement.remove();
 
-        cartTotal()
+        cartTotal();
 
     })
-
 }
 
-// UPDATING CART TOTAL
+
+// Changing the quantity value for Cart Total value.
+
+let quantityProducts = document.getElementsByClassName("cart-quantity")
+
+for (var i = 0; i < quantityProducts.length; i++) {
+
+    let amount = quantityProducts[i]
+
+    amount.addEventListener("change", amountChanged)
+}
+
+// Removing the ability to set quantity to a negative value or not a number.
+
+
+function amountChanged(event) {
+
+    const amount = event.target
+
+    if (isNaN(amount.value) || amount.value <= 0) {
+
+        amount.value = 1
+
+    }
+
+    cartTotal()
+    
+}
+
+
+// UPDATING CART TOTAL PRICE
 
 function cartTotal() {
 
-    const cartItemRow = document.getElementsByClassName("games-cart")[0]
-    const cartRows = cartItemRow.getElementsByClassName("purchasedgames")
+    let cartItemRows = document.getElementsByClassName("cart-rows")[0]
 
-    for (var i = 0; i < cartRows.length; i++) {
+    let itemRows = cartItemRows.getElementsByClassName("cart-item")
+
+    let total = 0
+
+    for (var i = 0; i < itemRows.length; i++) {
         
-        const cartRow = cartRows[i] 
+        let cartRow = itemRows[i]
 
-        const priceItem = cartRow.getElementsByClassName("pricetag")[0]
+        let priceItem = cartRow.getElementsByClassName("pricetag")[0]
 
-        const amountItems = cartRow.getElementsByClassName("cart-quantity")[0]
+        let amountItem = cartRow.getElementsByClassName("cart-quantity")[0]
 
-        console.log(cartRow);
+        // Find Price & Remove Valuta Sign
+
+        let price = parseFloat(priceItem.innerText.replace("$", ""))
+
+        // Find Quantity of Items
+
+        let quantity = amountItem.value
+
+        // Add up to the total
+
+        total = total + (price * quantity)
     }
+
+    // Adding the total to Cart-Total-Price element.
+
+    document.getElementsByClassName("cart-total-price")[0].innerText = "$" + total
+
 }
 
 

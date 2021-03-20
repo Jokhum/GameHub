@@ -1,9 +1,9 @@
-const button = document.getElementsByClassName("store-item-atc")
+const atcButton = document.getElementsByClassName("store-item-atc")
 
 
-for (var i = 0; i < button.length; i++) {
+    for (var i = 0; i < atcButton.length; i++) {
 
-    const click = button[i]
+    const click = atcButton[i]
 
     click.addEventListener("click", function() {
 
@@ -12,3 +12,4 @@ for (var i = 0; i < button.length; i++) {
     })
 
 }
+
