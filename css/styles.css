@@ -524,22 +524,6 @@ button:hover {
   color: #1b203d;
 }
 
-/*Contact*/
-
-.pressbox {
-  background-color: #c5d1d9;
-  padding: 10px 10px 10px 10px;
-  width: 110px;
-  height: 90px;
-  margin: 1rem;
-}
-
-.flexboxcontainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
 /*Games*/
 
 .games {
@@ -616,63 +600,44 @@ button:hover {
 
 /*Search Results*/
 
-.search1 {
-  width: 40%;
-  background-color: #1b203d;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-  border: 1px solid #f25f20;
-  border-radius: 20px;
+.checkouttext {
+  margin: 3rem;
+}
+
+.title-game {
+  margin: 1rem;
 }
 
 .search2 {
-  width: 40%;
-  background-color: #1b203d;
   margin: 20px;
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  height: fit-content;
-  border: 1px solid #f25f20;
-  border-radius: 20px;
+  border: 1px solid #c5d1d9;
+  border-radius: 5px;
 }
 
 .searchresults {
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px 10% 10px 10%;
-}
-
-.searchresults {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px 10% 10px 10%;
-}
-
-.searchresults h3,
-h4 {
-  color: #c5d1d9;
-  font-size: 20px;
-  text-align: left;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .searchresults img {
-  border: 1px solid #f25f20;
+  border: 1px solid #c5d1d9;
+  border-radius: 5px;
   max-height: 80px;
   max-width: 50px;
+  margin: 1rem;
 }
 
 /* My Page*/
 
 .my-page-text {
-  margin: 2%;
+  margin: 2rem;
 }
 
 .account-options h1 {
@@ -684,21 +649,20 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 5rem 0;
   gap: 10vw;
 }
 
 .left-bar {
   border: 1px solid #c5d1d9;
   padding: 20px;
-  border-radius: 20px;
-  width: 10%;
+  border-radius: 5px;
 }
 
 .right-bar {
   border: 1px solid #c5d1d9;
   padding: 20px;
-  border-radius: 20px;
-  width: 10%;
+  border-radius: 5px;
 }
 
 /*Footer*/
@@ -895,6 +859,10 @@ nav ul {
 
   /*Checkout*/
 
+  .checkouttext {
+    margin: 3rem;
+  }
+
   .gamestobuy {
     display: flex;
     flex-wrap: wrap;
@@ -959,5 +927,13 @@ nav ul {
   #quantity {
     position: relative;
     margin: 10px;
+  }
+
+  .searchresults {
+    flex-direction: column;
+  }
+
+  .search2 {
+    margin: 0;
   }
 }
