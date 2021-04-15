@@ -526,6 +526,10 @@ button:hover {
 
 /*Games*/
 
+.gamepage {
+  text-align: center;
+}
+
 .game-centered-container {
   margin-top: 5rem;
   display: flex;
