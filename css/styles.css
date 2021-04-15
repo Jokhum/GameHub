@@ -565,16 +565,6 @@ button:hover {
   white-space: nowrap;
 }
 
-.gamecolumn2 {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-around;
-  height: 300px;
-  white-space: nowrap;
-}
-
 .gamecovers {
   margin: 25px;
   height: 113px;
