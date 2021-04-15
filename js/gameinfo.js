@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const newUrl = "http://jkmzd.eu/api/wp-json/wc/store/products/" + id;
+const newUrl = "https://jkmzd.eu/api/wp-json/wc/store/products/" + id;
 
 console.log(id);
 

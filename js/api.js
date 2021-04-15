@@ -1,4 +1,4 @@
-const url = "http://jkmzd.eu/api/wp-json/wc/store/products";
+const url = "https://jkmzd.eu/api/wp-json/wc/store/products";
 
 
 const gameContainer = document.querySelector(".gamecolumn");
