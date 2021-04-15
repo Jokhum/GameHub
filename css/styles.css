@@ -526,12 +526,27 @@ button:hover {
 
 /*Games*/
 
+.game-centered-container {
+  margin-top: 5rem;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+}
+
 .games {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.games:hover {
+  cursor: pointer;
 }
 
 .games img {
@@ -541,6 +556,16 @@ button:hover {
 }
 
 .gamecolumn {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  white-space: nowrap;
+}
+
+.gamecolumn2 {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%;
