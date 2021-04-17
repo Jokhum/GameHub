@@ -30,7 +30,6 @@ async function getGameInfo() {
 
 getGameInfo();
 
-// CReate Game Info HTML //
 
 function createHtml(gameInfo) {
 
@@ -41,16 +40,15 @@ function createHtml(gameInfo) {
 
     try {
 
-    gamePage.innerHTML = `  <div class="game-centered-container">
-                                <img src="${gameImage}" class="item-image"></img>
-                                <h1>${gameName}</h1>
-                                ${gameDescription}
-                                <button class="store-item-atc" type="button">
-                                Add to Cart
-                                </button>
-                                ${gameReview}
-                                </div>
-                                `;
+    gamePage.innerHTML = `<img src="${gameImage}" class="game-info-image"></img>
+                             <div class="game-title-descript">
+                               <h1>${gameName}</h1>
+                               ${gameDescription}
+                               <button class="store-item-atc" type="button">
+                               Add to Cart
+                           </button>
+                           ${gameReview}
+                            </div>`;
     }
     catch(error) {
         console.log(error);

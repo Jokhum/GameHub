@@ -201,7 +201,8 @@ nav a:hover {
 
 #buy-game-one {
   display: flex;
-  border: 1px #f25f20 solid;
+  border: 1px #c5d1d9 solid;
+  border-radius: 5px;
 }
 
 .gametext {
@@ -527,23 +528,17 @@ button:hover {
 /*Games*/
 
 .gamepage {
-  text-align: center;
-  margin-top: 5%;
-}
-
-.game-centered-container {
-  margin-top: 5rem;
   display: flex;
-  gap: 25px;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  word-wrap: break-word;
+  margin-top: 5rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .games {
   display: flex;
+  flex: 1 0 auto;
+  width: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -560,7 +555,7 @@ button:hover {
   margin-right: 25%;
   margin-top: 5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 300px;
   white-space: nowrap;
 }
@@ -570,6 +565,13 @@ button:hover {
   border-radius: 5px;
   width: 80px;
   height: 113px;
+}
+
+.game-title-descript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .store-item-title {
@@ -604,6 +606,12 @@ button:hover {
 .add-to-cart:hover {
   background-color: #f25f20;
   color: #1b203d;
+}
+
+.game-info-image {
+  border: 1px solid #c5d1d9;
+  border-radius: 5px;
+  max-width: 200px;
 }
 
 /*Search Results*/
@@ -830,13 +838,19 @@ nav ul {
     margin: 0.5rem;
   }
   .gamecolumn {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    min-width: 250px;
     margin-left: 0%;
     margin-right: 0%;
     height: 100vh;
     align-items: center;
+  }
+
+  .gamepage {
+    flex-direction: column;
+  }
+  .games {
+    min-width: 150px;
   }
 
   .games h3 {
@@ -925,7 +939,8 @@ nav ul {
   }
 
   .cart-item {
-    flex-direction: row;
+    flex-direction: column;
+    gap: 0.5rem;
     padding: 2rem 0;
   }
 
