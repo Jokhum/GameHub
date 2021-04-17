@@ -528,6 +528,7 @@ button:hover {
 
 .gamepage {
   text-align: center;
+  margin-top: 5%;
 }
 
 .game-centered-container {
@@ -547,16 +548,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0.5rem;
 }
 
 .games:hover {
   cursor: pointer;
-}
-
-.games img {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 0.5rem 0;
 }
 
 .gamecolumn {
@@ -569,16 +565,9 @@ button:hover {
   white-space: nowrap;
 }
 
-.gamecovers {
-  margin: 25px;
-  height: 113px;
-  width: 81px;
-}
-
-.gamecovers img {
+.item-image {
   border: 1px solid #c5d1d9;
   border-radius: 5px;
-  align-items: center;
   width: 80px;
   height: 113px;
 }
@@ -829,6 +818,17 @@ nav ul {
 
   /*Games*/
 
+  .store-item-title {
+    margin: 0;
+  }
+
+  .store-item-atc {
+    margin: 0;
+  }
+
+  .store-item-price {
+    margin: 0.5rem;
+  }
   .gamecolumn {
     display: flex;
     justify-content: space-around;
@@ -845,10 +845,6 @@ nav ul {
 
   .games h2 {
     margin-bottom: 2px;
-  }
-
-  .gamecovers {
-    margin-bottom: 55px;
   }
 
   /*Account Page*/

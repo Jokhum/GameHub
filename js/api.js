@@ -9,17 +9,15 @@ async function getGames() {
 
     const results = await response.json();
 
-    const games = results;
-
-    console.log(results);
+    const games = results.sort((a, b) => a - b);
 
     gameContainer.innerHTML = "";
 
     for (let i = 0; i < games.length; i++) {
 
-        gameContainer.innerHTML += `<div class="gamecovers">
+        gameContainer.innerHTML += `
                                     <div class="games">
-                                    <a href="gameinfo.html?id=${games[i].id}" class="item-image">
+                                    <a href="gameinfo.html?id=${games[i].id}">
                                     <img src="${games[i].images[0].src}" alt="Game Image" class="item-image">
                                     </a>
                                     <span class="store-item-title">${games[i].name}</span>
@@ -27,7 +25,6 @@ async function getGames() {
                                     <button class="store-item-atc" type="button">
                                     Add to Cart
                                     </button>
-                                    </div
                                     </div
                                     `;
     }

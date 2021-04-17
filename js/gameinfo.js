@@ -42,13 +42,13 @@ function createHtml(gameInfo) {
     try {
 
     gamePage.innerHTML = `  <div class="game-centered-container">
-                                <img src="${gameImage}"></img>
+                                <img src="${gameImage}" class="item-image"></img>
                                 <h1>${gameName}</h1>
                                 ${gameDescription}
-                                ${gameReview}
                                 <button class="store-item-atc" type="button">
                                 Add to Cart
                                 </button>
+                                ${gameReview}
                                 </div>
                                 `;
     }
