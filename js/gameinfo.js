@@ -8,7 +8,6 @@ const id = params.get("id");
 
 const newUrl = "https://jkmzd.eu/api/wp-json/wc/store/products/" + id;
 
-console.log(id);
 
 async function getGameInfo() {
 
@@ -19,11 +18,8 @@ async function getGameInfo() {
 
     createHtml(gameInfo);
 
-    console.log(gameInfo);
-
     }
     catch(error) {
-        console.log(error);
         gamePage.innerHTML = "An error has occurred.";
     }
 }
@@ -51,7 +47,6 @@ function createHtml(gameInfo) {
                             </div>`;
     }
     catch(error) {
-        console.log(error);
         teamContainer.innerHTML = "An error has occurred."
     }
 }
@@ -60,8 +55,6 @@ getGameInfo().then(() => {
 
 
     const gameButton = document.getElementsByClassName("store-item-atc")
-    
-    console.log(gameButton);
     
         for (var i = 0; i < gameButton.length; i++) {
     

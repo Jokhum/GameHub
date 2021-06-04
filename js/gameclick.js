@@ -3,7 +3,6 @@ getGames().then(() => {
 
     const gameButton = document.getElementsByClassName("store-item-atc")
     
-    console.log(gameButton);
     
         for (var i = 0; i < gameButton.length; i++) {
     

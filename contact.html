@@ -10,22 +10,6 @@
       src="https://kit.fontawesome.com/41fed443ad.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Hotjar Tracking Code for https://pw-gamehub.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2268855, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body class="home">
     <header>
@@ -39,36 +23,39 @@
           /></a>
         </div>
       </div>
+      <div class="burger-container">
+        <button class="hamburger" id="hamburger-btn">
+          <i class="fas fa-bars" id="burger-btn"></i>
+        </button>
+        <div class="menuicons">
+          <a href="shoppingcart.html">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="favourites.html">
+            <i class="fas fa-star"></i>
+          </a>
+          <a href="account.html">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
       <nav class="nav">
         <div class="searchbar">
           <input type="text" placeholder="Search..." class="search" />
           <a href="search-results.html"><i class="fas fa-search"></i></a>
         </div>
-        <div class="navheader">
-          <li class="navbutton">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navbutton">
-            <a href="games.html">Games</a>
-          </li>
-          <li class="active">
-            <a href="contact.html">Contact</a>
-          </li>
-        </div>
-        <div class="menuicons">
-          <a href="shoppingcart.html">
-            <img
-              src="images/shopping-cart.png"
-              class="Icons"
-              alt="Shopping Cart"
-            />
-          </a>
-          <a href="favourites.html">
-            <img src="images/star.png" class="Icons" alt="Favourites" />
-          </a>
-          <a href="account.html">
-            <img src="images/profileicon.png" class="Icons" alt="My Page" />
-          </a>
+          <div class="navheader">
+            <li class="navbutton">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navbutton">
+              <a href="games.html">Games</a>
+            </li>
+            <li class="active">
+              <a href="contact.html">Contact</a>
+            </li>
+          </div>
+          <div class="filler-container"></div>
         </div>
       </nav>
     </header>
@@ -86,25 +73,20 @@
       </section>
     </main>
     <div class="footermenu">
-      <div class="footer-text">
-        <p>Shortcuts</p>
-        <p>News</p>
-        <p>Support</p>
-      </div>
       <div class="socialmedia">
-        <a href="www.facebook.com">
-          <img src="images/facebook.png" class="mediaicons" alt="Facebook" />
+        <a href="/index.html">
+          <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="www.instagram.com">
-          <img src="images/instagram.png" class="mediaicons" alt="Instagram" />
+        <a href="/index.html">
+          <i class="fab fa-instagram"></i>
         </a>
-        <a href="www.twitch.com">
-          <img src="images/twitch.png" class="mediaicons" alt="Twitch" />
+        <a href="/index.html">
+          <i class="fab fa-twitch"></i>
         </a>
-        <a href="www.twitter.com">
-          <img src="images/twitter.png" class="mediaicons" alt="Twitter" />
+        <a href="/index.html">
+          <i class="fab fa-twitter"></i>
         </a>
       </div>
     </div>
-  </body>
+    <script src="js/burger.js"></script>
 </html>
